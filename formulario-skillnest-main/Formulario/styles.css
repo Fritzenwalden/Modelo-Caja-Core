@@ -1,0 +1,167 @@
+/* --- Estilos generales de la página --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #e0f7fa);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Títulos --- */
+h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-top: 40px;
+    font-size: 1.8em;
+}
+
+h3 {
+    text-align: center;
+    color: #388e3c;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2e7d32;
+    margin-top: 30px;
+}
+
+/* --- Contenedor del formulario --- */
+form {
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* --- Etiquetas y entradas --- */
+label {
+    font-weight: 500;
+    display: block;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+/* --- Efecto al enfocar los campos --- */
+input:focus,
+select:focus {
+    border-color: #66bb6a;
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+    outline: none;
+}
+
+/* --- Párrafos de texto dentro del formulario --- */
+form p {
+    margin-top: 20px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* --- Checkbox y radio --- */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* --- Botón de envío --- */
+button {
+    display: block;
+    width: 100%;
+    background: #43a047;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* --- Efecto al pasar el mouse sobre el botón --- */
+button:hover {
+    background: #388e3c;
+    transform: scale(1.02);
+}
+
+/* --- Adaptabilidad para pantallas pequeñas --- */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
+
+/* --- Agrupadores de secciones --- */
+.section-group {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+/* --- Títulos de los grupos --- */
+.section-group p,
+.section-group label:first-child {
+    font-weight: 600;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+/* --- Radios y checkboxes organizados en línea --- */
+.option-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.option-group label {
+    background: #ffffff;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.option-group label:hover {
+    background: #e8f5e9;
+}
+
+/* --- Ajustar inputs dentro del label --- */
+.option-group input {
+    accent-color: #43a047; /* cambia el color del check o radio */
+}
+
+/* --- Ajustar texto de secciones --- */
+.section-group p {
+    margin-bottom: 8px;
+    color: #555;
+}
